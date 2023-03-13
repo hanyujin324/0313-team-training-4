@@ -34,7 +34,7 @@ if(request.method === 'GET' && request.url === '/') { //$$연산자는 논리곱
 response.writeHead(200, {'Content-Type':'text/html'}); //200은 http응답코드 ok라는 뜻으로 요청이 성공적으로 수행되었다는 뜻 
 let page = firstPage(formTag); //firstPage에 formTag가 들어있다
 response.write(page);
-response.end();
+response.end(); 
 }
 
 // 제출
